@@ -49,12 +49,12 @@ fn part2() -> u64{
                 _ => &edges[temp].1
             };
             dir_step = if dir_step == dir.len() - 1 {0} else {dir_step + 1};
-            println!("{}", temp);
+            // println!("{}", temp);
             steps += 1;
         }
         steps_to_z.push(steps);
     }
-    println!("{:?}", steps_to_z);
+    // println!("{:?}", steps_to_z);
 
     let mut res = steps_to_z[0];
     for i in 1..steps_to_z.len() {
