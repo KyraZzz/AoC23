@@ -13,6 +13,7 @@ fn main() {
 }
 
 fn part2() -> u64{
+    // this problem solvable because for NUM(A) == Num(Z)
     let args: Vec<String> = env::args().collect();
     let file = fs::File::open(&args[1]).expect("File not found");
     let reader = BufReader::new(file);
